@@ -12,8 +12,7 @@ plugins:
 custom:
   webpack:
     includeModules: true
-  prisma:
-    prismaPath: ../../packages/prisma
+    packager: yarn
 
 provider:
   name: aws

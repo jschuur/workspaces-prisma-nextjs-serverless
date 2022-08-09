@@ -13,7 +13,7 @@
     "deploy:sls": "yarn workspace backend run deploy",
     "build:site": "yarn workspace site run build",
     "deploy:site": "yarn workspace site run deploy",
-    "prisma:generate": "yarn workspace @monorepo-test/prisma generate"
+    "prisma:generate": "yarn prisma generate --schema ./packages/prisma/prisma/schema.prisma"
   },
   "devDependencies": {
     "@babel/core": "^7.18.10",
