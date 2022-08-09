@@ -1,0 +1,36 @@
+service: monorepo-test
+app: monorepo-test
+org: jschuur
+
+frameworkVersion: '3'
+
+plugins:
+  - serverless-dotenv-plugin
+  - serverless-webpack
+  - serverless-webpack-prisma
+
+custom:
+  webpack:
+    includeModules: true
+  prisma:
+    prismaPath: ../../packages/prisma
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: us-east-1
+
+functions:
+  hello:
+    handler: src/hello.handler
+    events:
+      - httpApi:
+          method: get
+          path: /hello
+  videos:
+    handler: src/videos.handler
+    events:
+      - httpApi:
+          method: get
+          path: /videos
