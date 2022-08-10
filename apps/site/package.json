@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@monorepo-test/prisma": "workspace:1.0.0",
+    ".prisma/client": "../../node_modules/.prisma/client",
     "next": "12.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0"

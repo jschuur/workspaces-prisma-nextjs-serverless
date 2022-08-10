@@ -1,5 +1,5 @@
 // import { PrismaClient } from '@prisma/client';
-const { PrismaClient } = require('@monorepo-test/prisma');
+const { PrismaClient } = require('.prisma/client');
 
 const prisma = new PrismaClient();
 

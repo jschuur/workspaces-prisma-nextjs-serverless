@@ -49,6 +49,7 @@ importers:
 
   apps/site:
     specifiers:
+      .prisma/client: ../../node_modules/.prisma/client
       '@monorepo-test/prisma': workspace:1.0.0
       eslint: 8.21.0
       eslint-config-next: 12.2.4
@@ -56,6 +57,7 @@ importers:
       react: 18.2.0
       react-dom: 18.2.0
     dependencies:
+      .prisma/client: link:../../node_modules/.prisma/client
       '@monorepo-test/prisma': link:../../packages/prisma
       next: 12.2.4_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
@@ -67,14 +69,19 @@ importers:
   packages/prisma:
     specifiers:
       '@prisma/client': ^4.2.0
+      prisma: ^4.2.0
     dependencies:
-      '@prisma/client': 4.2.0
+      '@prisma/client': 4.2.0_prisma@4.2.0
+    devDependencies:
+      prisma: 4.2.0
 
   services/backend:
     specifiers:
+      .prisma/client: ../../node_modules/.prisma/client
       '@monorepo-test/prisma': workspace:1.0.0
       webpack: ^5.74.0
     dependencies:
+      .prisma/client: link:../../node_modules/.prisma/client
       '@monorepo-test/prisma': link:../../packages/prisma
       webpack: 5.74.0
 
@@ -344,19 +351,6 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.13.0
     dev: true
-
-  /@prisma/client/4.2.0:
-    resolution: {integrity: sha512-Q/X8fi1UBufCrkdLk188sC/roiGxEm1V3qU4uEP5SyleO5n2A+FyC62S7+4I0hu57CU3c7Ls3YjqPiZyTHVGOw==}
-    engines: {node: '>=14.17'}
-    requiresBuild: true
-    peerDependencies:
-      prisma: '*'
-    peerDependenciesMeta:
-      prisma:
-        optional: true
-    dependencies:
-      '@prisma/engines-version': 4.2.0-33.2920a97877e12e055c1333079b8d19cee7f33826
-    dev: false
 
   /@prisma/client/4.2.0_prisma@4.2.0:
     resolution: {integrity: sha512-Q/X8fi1UBufCrkdLk188sC/roiGxEm1V3qU4uEP5SyleO5n2A+FyC62S7+4I0hu57CU3c7Ls3YjqPiZyTHVGOw==}

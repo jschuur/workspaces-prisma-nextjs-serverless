@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "pnpm -F site dev",
-    "deploy:sls": "pnpm -F services/backend run deploy",
-    "build:site": "pnpm -F apps/site run build",
-    "deploy:site": "pnpm -F apps/site run deploy",
+    "deploy:sls": "pnpm -F backend run deploy",
+    "build:site": "pnpm -F site run build",
+    "deploy:site": "pnpm -F site run deploy",
     "prisma:generate": "pnpx prisma generate --schema ./packages/prisma/prisma/schema.prisma",
     "install:all": "pnpm recursive install",
     "clean": "pnpm recursive exec -- rm -rf node_modules; rm -rf node_modules; rm pnpm-lock.yaml",
