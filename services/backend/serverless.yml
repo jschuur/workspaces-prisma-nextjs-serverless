@@ -5,18 +5,20 @@ org: jschuur
 frameworkVersion: '3'
 
 plugins:
-  - serverless-dotenv-plugin
+  - serverless-plugin-monorepo
   - serverless-webpack
   - serverless-webpack-prisma
 
 custom:
   webpack:
     includeModules: true
-    packager: yarn
+    packager: pnpm
+    # packagerOptions:
+    #   noFrozenLockFile: true
 
 provider:
   name: aws
-  runtime: nodejs12.x
+  runtime: nodejs16.x
   stage: dev
   region: us-east-1
 
@@ -27,9 +29,9 @@ functions:
       - httpApi:
           method: get
           path: /hello
-  videos:
-    handler: src/videos.handler
+  animals:
+    handler: src/animals.handler
     events:
       - httpApi:
           method: get
-          path: /videos
+          path: /animals

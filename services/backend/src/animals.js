@@ -1,14 +1,14 @@
 // import { PrismaClient } from '@prisma/client';
-const { PrismaClient } = require('@prisma/client');
+const { PrismaClient } = require('@monorepo-test/prisma');
 
 const prisma = new PrismaClient();
 
 // export const handler = async (event) => {
 module.exports.handler = async (event) => {
-  const videos = await prisma.video.findMany({ take: 10 });
+  const animals = await prisma.animal.findMany();
 
   return {
     statusCode: 200,
-    body: JSON.stringify(videos, null, 2),
+    body: JSON.stringify(animals, null, 2),
   };
 };

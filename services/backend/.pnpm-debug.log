@@ -1,0 +1,40 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1,
+    "total": 1,
+    "workspacePrefix": "/Users/joostschuur/Code/Personal/_Tests/yarn-workspaces-prisma-nextjs-serverless/services/backend"
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "backend",
+      "scripts": {
+        "deploy": "serverless deploy -s production"
+      },
+      "dependencies": {
+        "@monorepo-test/prisma": "workspace:*",
+        "prisma": "^4.2.0",
+        "webpack": "^5.74.0"
+      }
+    },
+    "prefix": "/Users/joostschuur/Code/Personal/_Tests/yarn-workspaces-prisma-nextjs-serverless/services/backend"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "/Users/joostschuur/Library/pnpm/store/v3",
+    "virtualStoreDir": "/Users/joostschuur/Code/Personal/_Tests/yarn-workspaces-prisma-nextjs-serverless/services/backend/node_modules/.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "/Users/joostschuur/Code/Personal/_Tests/yarn-workspaces-prisma-nextjs-serverless/services/backend",
+    "stage": "resolution_started"
+  },
+  "4 error pnpm": {
+    "code": "ERR_PNPM_NO_MATCHING_VERSION_INSIDE_WORKSPACE",
+    "pkgsStack": [],
+    "err": {
+      "name": "pnpm",
+      "message": "In : No matching version found for @monorepo-test/prisma@* inside the workspace",
+      "code": "ERR_PNPM_NO_MATCHING_VERSION_INSIDE_WORKSPACE",
+      "stack": "pnpm: In : No matching version found for @monorepo-test/prisma@* inside the workspace\n    at tryResolveFromWorkspace (/Users/joostschuur/Library/pnpm/global/5/.pnpm/pnpm@7.3.0/node_modules/pnpm/dist/pnpm.cjs:85745:15)\n    at resolveNpm (/Users/joostschuur/Library/pnpm/global/5/.pnpm/pnpm@7.3.0/node_modules/pnpm/dist/pnpm.cjs:85637:39)\n    at Object.resolve (/Users/joostschuur/Library/pnpm/global/5/.pnpm/pnpm@7.3.0/node_modules/pnpm/dist/pnpm.cjs:85867:34)\n    at ctx.requestsQueue.add.priority (/Users/joostschuur/Library/pnpm/global/5/.pnpm/pnpm@7.3.0/node_modules/pnpm/dist/pnpm.cjs:93031:75)\n    at run (/Users/joostschuur/Library/pnpm/global/5/.pnpm/pnpm@7.3.0/node_modules/pnpm/dist/pnpm.cjs:92792:90)\n    at PQueue._tryToStartAnother (/Users/joostschuur/Library/pnpm/global/5/.pnpm/pnpm@7.3.0/node_modules/pnpm/dist/pnpm.cjs:92746:13)\n    at /Users/joostschuur/Library/pnpm/global/5/.pnpm/pnpm@7.3.0/node_modules/pnpm/dist/pnpm.cjs:92805:16\n    at new Promise (<anonymous>)\n    at PQueue.add (/Users/joostschuur/Library/pnpm/global/5/.pnpm/pnpm@7.3.0/node_modules/pnpm/dist/pnpm.cjs:92787:16)\n    at resolveAndFetch (/Users/joostschuur/Library/pnpm/global/5/.pnpm/pnpm@7.3.0/node_modules/pnpm/dist/pnpm.cjs:93031:55)"
+    }
+  }
+}

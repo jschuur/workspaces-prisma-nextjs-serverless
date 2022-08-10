@@ -21,23 +21,13 @@ module.exports = {
           from: '../../packages/prisma/prisma/schema.prisma',
           to: 'src',
         },
+        {
+          from: '../../packages/prisma/prisma/animals.db',
+          to: 'src',
+        },
       ],
     }),
   ],
-  // module: {
-  //   rules: [
-  //     {
-  //       test: /\.js$/,
-  //       exclude: /node_modules/,
-  //       use: {
-  //         loader: 'babel-loader',
-  //         // options: {
-  //         //   cacheDirectory: true,
-  //         // },
-  //       },
-  //     },
-  //   ],
-  // },
   output: {
     libraryTarget: 'commonjs2',
     filename: '[name].js',

@@ -1,42 +1,37 @@
 {
   "name": "yarn-workspaces-prisma-nextjs-serverless",
-  "private": true,
-  "packageManager": "yarn@3.2.2",
-  "workspaces": [
-    "packages/*",
-    "apps/*",
-    "services/*"
-  ],
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "yarn workspace site dev",
-    "link:cli": "yarn workspace cli link",
-    "deploy:sls": "yarn workspace backend run deploy",
-    "build:site": "yarn workspace site run build",
-    "deploy:site": "yarn workspace site run deploy",
-    "prisma:generate": "yarn prisma generate --schema ./packages/prisma/prisma/schema.prisma"
+    "dev": "pnpm -F site dev",
+    "deploy:sls": "pnpm -F services/backend run deploy",
+    "build:site": "pnpm -F apps/site run build",
+    "deploy:site": "pnpm -F apps/site run deploy",
+    "prisma:generate": "pnpx prisma generate --schema ./packages/prisma/prisma/schema.prisma"
   },
   "devDependencies": {
-    "@babel/core": "^7.18.10",
-    "@babel/preset-env": "^7.18.10",
-    "@commitlint/cli": "^17.0.3",
-    "@commitlint/config-conventional": "^17.0.3",
-    "babel-loader": "^8.2.5",
-    "babel-loader-exclude-node-modules-except": "^1.2.1",
     "copy-webpack-plugin": "^11.0.0",
-    "dotenv-cli": "^6.0.0",
+    "eslint": "8.21.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "husky": "^8.0.1",
-    "jsonfile": "^6.1.0",
-    "prisma": "^4.1.1",
-    "serverless-dotenv-plugin": "^4.0.2",
-    "serverless-offline": "^9.1.6",
+    "prisma": "^4.2.0",
+    "serverless": "^3.21.0",
+    "serverless-plugin-monorepo": "^0.11.0",
     "serverless-webpack": "^5.8.0",
     "serverless-webpack-prisma": "^1.1.0",
     "terser-webpack-plugin": "^5.3.3",
+    "webpack": "^5.74.0",
     "webpack-node-externals": "^3.0.0",
     "webpack-node-module-types": "^1.2.2"
-  }
+  },
+  "dependencies": {
+    "@prisma/client": "^4.2.0",
+    "dotenv-flow": "^3.2.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

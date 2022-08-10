@@ -1,0 +1,16 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1,
+    "workspacePrefix": "/Users/joostschuur/Code/Personal/_Tests/yarn-workspaces-prisma-nextjs-serverless"
+  },
+  "1 error pnpm": {
+    "code": "ERR_PNPM_CANNOT_REMOVE_MISSING_DEPS",
+    "hint": "Available dependencies: @prisma/client",
+    "err": {
+      "name": "pnpm",
+      "message": "Cannot remove 'prisma': no such dependency found",
+      "code": "ERR_PNPM_CANNOT_REMOVE_MISSING_DEPS",
+      "stack": "pnpm: Cannot remove 'prisma': no such dependency found\n    at Object.handler (/Users/joostschuur/Library/pnpm/global/5/.pnpm/pnpm@7.3.0/node_modules/pnpm/dist/pnpm.cjs:124309:15)\n    at async /Users/joostschuur/Library/pnpm/global/5/.pnpm/pnpm@7.3.0/node_modules/pnpm/dist/pnpm.cjs:187855:21\n    at async run (/Users/joostschuur/Library/pnpm/global/5/.pnpm/pnpm@7.3.0/node_modules/pnpm/dist/pnpm.cjs:187829:34)\n    at async runPnpm (/Users/joostschuur/Library/pnpm/global/5/.pnpm/pnpm@7.3.0/node_modules/pnpm/dist/pnpm.cjs:188047:5)\n    at async /Users/joostschuur/Library/pnpm/global/5/.pnpm/pnpm@7.3.0/node_modules/pnpm/dist/pnpm.cjs:188039:7"
+    }
+  }
+}

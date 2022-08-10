@@ -1,0 +1,79 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 4,
+    "total": 5,
+    "workspacePrefix": "/Users/joostschuur/Code/Personal/_Tests/yarn-workspaces-prisma-nextjs-serverless"
+  },
+  "1 debug pnpm:lifecycle": {
+    "depPath": "/Users/joostschuur/Code/Personal/_Tests/yarn-workspaces-prisma-nextjs-serverless/packages/prisma",
+    "optional": false,
+    "script": "prisma generate",
+    "stage": "generate",
+    "wd": "/Users/joostschuur/Code/Personal/_Tests/yarn-workspaces-prisma-nextjs-serverless/packages/prisma"
+  },
+  "2 debug pnpm:lifecycle": {
+    "depPath": "/Users/joostschuur/Code/Personal/_Tests/yarn-workspaces-prisma-nextjs-serverless/packages/prisma",
+    "line": "Prisma schema loaded from prisma/schema.prisma",
+    "stage": "generate",
+    "stdio": "stdout",
+    "wd": "/Users/joostschuur/Code/Personal/_Tests/yarn-workspaces-prisma-nextjs-serverless/packages/prisma"
+  },
+  "3 debug pnpm:lifecycle": {
+    "depPath": "/Users/joostschuur/Code/Personal/_Tests/yarn-workspaces-prisma-nextjs-serverless/packages/prisma",
+    "line": "up to date, audited 3 packages in 2s",
+    "stage": "generate",
+    "stdio": "stdout",
+    "wd": "/Users/joostschuur/Code/Personal/_Tests/yarn-workspaces-prisma-nextjs-serverless/packages/prisma"
+  },
+  "4 debug pnpm:lifecycle": {
+    "depPath": "/Users/joostschuur/Code/Personal/_Tests/yarn-workspaces-prisma-nextjs-serverless/packages/prisma",
+    "line": "found 0 vulnerabilities",
+    "stage": "generate",
+    "stdio": "stdout",
+    "wd": "/Users/joostschuur/Code/Personal/_Tests/yarn-workspaces-prisma-nextjs-serverless/packages/prisma"
+  },
+  "5 debug pnpm:lifecycle": {
+    "depPath": "/Users/joostschuur/Code/Personal/_Tests/yarn-workspaces-prisma-nextjs-serverless/packages/prisma",
+    "line": "Error: Could not resolve @prisma/client despite the installation that we just tried.",
+    "stage": "generate",
+    "stdio": "stderr",
+    "wd": "/Users/joostschuur/Code/Personal/_Tests/yarn-workspaces-prisma-nextjs-serverless/packages/prisma"
+  },
+  "6 debug pnpm:lifecycle": {
+    "depPath": "/Users/joostschuur/Code/Personal/_Tests/yarn-workspaces-prisma-nextjs-serverless/packages/prisma",
+    "line": "Please try to install it by hand with npm install @prisma/client and rerun prisma generate 🙏.",
+    "stage": "generate",
+    "stdio": "stderr",
+    "wd": "/Users/joostschuur/Code/Personal/_Tests/yarn-workspaces-prisma-nextjs-serverless/packages/prisma"
+  },
+  "7 debug pnpm:lifecycle": {
+    "depPath": "/Users/joostschuur/Code/Personal/_Tests/yarn-workspaces-prisma-nextjs-serverless/packages/prisma",
+    "exitCode": 1,
+    "optional": false,
+    "stage": "generate",
+    "wd": "/Users/joostschuur/Code/Personal/_Tests/yarn-workspaces-prisma-nextjs-serverless/packages/prisma"
+  },
+  "8 info pnpm": {
+    "err": {
+      "name": "Error",
+      "message": "@monorepo-test/prisma@1.0.0 generate: `prisma generate`\nExit status 1",
+      "code": "ELIFECYCLE",
+      "stack": "Error: @monorepo-test/prisma@1.0.0 generate: `prisma generate`\nExit status 1\n    at EventEmitter.<anonymous> (/Users/joostschuur/Library/pnpm/global/5/.pnpm/pnpm@7.3.0/node_modules/pnpm/dist/pnpm.cjs:108415:20)\n    at EventEmitter.emit (node:events:527:28)\n    at ChildProcess.<anonymous> (/Users/joostschuur/Library/pnpm/global/5/.pnpm/pnpm@7.3.0/node_modules/pnpm/dist/pnpm.cjs:94981:18)\n    at ChildProcess.emit (node:events:527:28)\n    at maybeClose (node:internal/child_process:1092:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:302:5)"
+    }
+  },
+  "9 error pnpm": {
+    "errno": 1,
+    "code": "ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL",
+    "pkgid": "@monorepo-test/prisma@1.0.0",
+    "stage": "generate",
+    "script": "prisma generate",
+    "pkgname": "@monorepo-test/prisma",
+    "prefix": "/Users/joostschuur/Code/Personal/_Tests/yarn-workspaces-prisma-nextjs-serverless/packages/prisma",
+    "err": {
+      "name": "pnpm",
+      "message": "@monorepo-test/prisma@1.0.0 generate: `prisma generate`\nExit status 1",
+      "code": "ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL",
+      "stack": "Error: @monorepo-test/prisma@1.0.0 generate: `prisma generate`\nExit status 1\n    at EventEmitter.<anonymous> (/Users/joostschuur/Library/pnpm/global/5/.pnpm/pnpm@7.3.0/node_modules/pnpm/dist/pnpm.cjs:108415:20)\n    at EventEmitter.emit (node:events:527:28)\n    at ChildProcess.<anonymous> (/Users/joostschuur/Library/pnpm/global/5/.pnpm/pnpm@7.3.0/node_modules/pnpm/dist/pnpm.cjs:94981:18)\n    at ChildProcess.emit (node:events:527:28)\n    at maybeClose (node:internal/child_process:1092:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:302:5)"
+    }
+  }
+}

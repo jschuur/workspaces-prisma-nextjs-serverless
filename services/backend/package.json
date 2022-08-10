@@ -1,10 +1,10 @@
 {
   "name": "backend",
-  "packageManager": "yarn@3.2.2",
   "scripts": {
     "deploy": "serverless deploy -s production"
   },
   "dependencies": {
+    "@monorepo-test/prisma": "workspace:1.0.0",
     "webpack": "^5.74.0"
   }
 }
