@@ -2,5 +2,5 @@ node_modules
 .env
 .env.production
 
-# https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
 .pnp.*
+npm-debug.log

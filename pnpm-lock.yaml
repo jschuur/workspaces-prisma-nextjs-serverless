@@ -41,6 +41,12 @@ importers:
       webpack-node-externals: 3.0.0
       webpack-node-module-types: 1.2.2
 
+  apps/prismaconsumer:
+    specifiers:
+      '@monorepo-test/prisma': 1.0.0
+    dependencies:
+      '@monorepo-test/prisma': link:../../packages/prisma
+
   apps/site:
     specifiers:
       '@monorepo-test/prisma': workspace:1.0.0
@@ -1062,7 +1068,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001374
+      caniuse-lite: 1.0.30001375
       electron-to-chromium: 1.4.213
       node-releases: 2.0.6
       update-browserslist-db: 1.0.5_browserslist@4.21.3
@@ -1148,8 +1154,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /caniuse-lite/1.0.30001374:
-    resolution: {integrity: sha512-mWvzatRx3w+j5wx/mpFN5v5twlPrabG8NqX2c6e45LCpymdoGqNvRkRutFUqpRTXKFQFNQJasvK0YT7suW6/Hw==}
+  /caniuse-lite/1.0.30001375:
+    resolution: {integrity: sha512-kWIMkNzLYxSvnjy0hL8w1NOaWNr2rn39RTAVyIwcw8juu60bZDWiF1/loOYANzjtJmy6qPgNmn38ro5Pygagdw==}
 
   /chalk/4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
@@ -3409,7 +3415,7 @@ packages:
     dependencies:
       '@next/env': 12.2.4
       '@swc/helpers': 0.4.3
-      caniuse-lite: 1.0.30001374
+      caniuse-lite: 1.0.30001375
       postcss: 8.4.14
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
