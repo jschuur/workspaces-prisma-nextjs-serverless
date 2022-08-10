@@ -1,5 +1,5 @@
 {
-  "name": "yarn-workspaces-prisma-nextjs-serverless",
+  "name": "workspaces-prisma-nextjs-serverless",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,10 @@
     "deploy:sls": "pnpm -F services/backend run deploy",
     "build:site": "pnpm -F apps/site run build",
     "deploy:site": "pnpm -F apps/site run deploy",
-    "prisma:generate": "pnpx prisma generate --schema ./packages/prisma/prisma/schema.prisma"
+    "prisma:generate": "pnpx prisma generate --schema ./packages/prisma/prisma/schema.prisma",
+    "install:all": "pnpm recursive install",
+    "clean": "pnpm recursive exec -- rm -rf node_modules; rm -rf node_modules; rm pnpm-lock.yaml",
+    "reset": "pnpm clean && pnpm install:all && pnpm prisma:generate"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^11.0.0",
