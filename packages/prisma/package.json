@@ -1,9 +1,12 @@
 {
   "name": "@monorepo-test/prisma",
   "version": "1.0.0",
-  "main": "prisma/prisma.js",
   "scripts": {
     "generate": "prisma generate"
+  },
+  "exports": {
+    "import": "./src/prisma.js",
+    "require": "./src/prismaCJS.js"
   },
   "dependencies": {
     "@prisma/client": "^4.2.0"

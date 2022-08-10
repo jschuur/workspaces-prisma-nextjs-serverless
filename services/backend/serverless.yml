@@ -12,7 +12,7 @@ plugins:
 custom:
   webpack:
     includeModules: true
-    packager: pnpm
+    # packager: pnpm
     # packagerOptions:
     #   noFrozenLockFile: true
 

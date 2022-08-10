@@ -1,0 +1,7 @@
+lockfileVersion: 5.4
+
+specifiers:
+  '@monorepo-test/prisma': 1.0.0
+
+dependencies:
+  '@monorepo-test/prisma': link:../../packages/prisma
